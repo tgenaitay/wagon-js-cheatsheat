@@ -124,14 +124,14 @@ What are the HTTP requests?
 What's AJAX?
 
 - Allows to load data in the page without refreshing it!
-- Let Javascript handle `HTTP` requests
+- Let Javascript handle **HTTP** requests
 
 How to do AJAX?
 
-- $.ajax() with jQuery
-- .fetch() is more modern
+- **$.ajax()** with jQuery
+- **.fetch()** is more modern
 
-Example of GET request with fetch():
+**Example of GET request with fetch():**
 
 ```javascript
 
@@ -155,7 +155,7 @@ fetch(url)
   });
 ```
 
-Example of POST request with fetch():
+**Example of POST request with fetch():**
 
 ```javascript
 
