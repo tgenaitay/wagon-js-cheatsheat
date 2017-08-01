@@ -175,10 +175,7 @@ fetch(url,{method:"POST",body:json_string})
 
       });
     }
-  )
-  .catch(function(err) {
-    console.log('Fetch Error :-S', err);
-  });
+  );
 ```
 
 
