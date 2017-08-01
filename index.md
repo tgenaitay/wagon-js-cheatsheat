@@ -113,3 +113,47 @@ els.lastChild
 
 The syntax is different 😱
 but the concepts are all the same 🤗
+
+## AJAX & HTTP
+
+What are the HTTP requests?
+
+- `GET request`: get content (I want to read comments/images/..)
+- `POST request`: send new data (Here are my email and password, I want to sign up!)
+
+What's AJAX?
+
+- Allows to load data in the page without refreshing it!
+- Let Javascript handle `HTTP` requests
+
+How to do AJAX?
+
+$.ajax() with jQuery
+
+.fetch() is more modern
+
+```javascript
+
+var url = 'https://some.api.com'
+
+fetch(url)
+  .then(
+    function(response) {
+
+      // Examine the text in the response from the API
+      response.json().then(function(data) {
+
+        // We have succesfully fetched data!!
+        console.log(data);
+
+      });
+    }
+  )
+  .catch(function(err) {
+    console.log('Fetch Error :-S', err);
+  });
+```
+
+
+
+
