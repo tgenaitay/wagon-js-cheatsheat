@@ -128,9 +128,10 @@ What's AJAX?
 
 How to do AJAX?
 
-$.ajax() with jQuery
+- $.ajax() with jQuery
+- .fetch() is more modern
 
-.fetch() is more modern
+Example of GET request with fetch():
 
 ```javascript
 
@@ -145,6 +146,32 @@ fetch(url)
 
         // We have succesfully fetched data!!
         console.log(data);
+
+      });
+    }
+  )
+  .catch(function(err) {
+    console.log('Fetch Error :-S', err);
+  });
+```
+
+Example of POST request with fetch():
+
+```javascript
+
+var url = 'https://some.api.com'
+request_body_object = { "description":"Demo string" };
+var json_string = JSON.stringify(request_body_object);
+
+fetch(url,{method:"POST",body:json_string})
+  .then(
+    function(response) {
+
+      // Examine the text in the response from the API
+      response.json().then(function(response_body_object) {
+
+        // We have succesfully posted data!!
+        console.log(response_body_object);
 
       });
     }
