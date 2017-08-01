@@ -1,15 +1,15 @@
-#Le Wagon JS cheatsheat for beginners
+# Le Wagon JS cheatsheat for beginners
 
 ## JavaScript ES5
 
 - Callback functions
 
 ```javascript
-Some_API.register(callback) 
+Some_API.register(callback)
 // register your callback
 
 function callback(){
-	do_something_else() 
+	do_something_else()
 	// this code will run when something happens
 }
 ```
@@ -28,14 +28,14 @@ var person = {
 	}
 
 // use the property name to return its value:
-person.first 
+person.first
 // => "Michaeljohn"
 
-person['first'] 
+person['first']
 // => "Michaeljohn"
 
 var property_name = 'first'
-person[property_name] 
+person[property_name]
 // => "Michaeljohn"
 
 
@@ -54,7 +54,7 @@ var array = ["a",42,0,7,new Date(),function(x){return x*x}]
 var simple_array = ["string","another string"]
 
 // use the index to return a value:
-simple_array[0] 
+simple_array[0]
 // => "string"
 
 // here's an array of objects... classic structure:
@@ -62,7 +62,7 @@ var arr_of_objs = [{x:"y"},{x:"z"},{x:"a"}]
 
 // use the [index] and .property to return a value:
 arr_of_objs[2].x
-// => "a" 
+// => "a"
 
 arr_of_objs.length
 // => 3
@@ -76,7 +76,7 @@ arr_of_objs.length
 Whenever you see this dollar sign... it's jQuery! A powerful **library** of Javascript code. Its helps for cross-browser compatibility.
 
 ```javascript
-// to select a DOM element, use CSS selectors! 
+// to select a DOM element, use CSS selectors!
 // .class #id ...
 $('.logo')
 
@@ -111,5 +111,5 @@ els = document.querySelectorAll('p')
 els.lastChild
 ```
 
-The syntax is different 😱 
+The syntax is different 😱
 but the concepts are all the same 🤗
