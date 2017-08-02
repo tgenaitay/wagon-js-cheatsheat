@@ -108,7 +108,9 @@ element.addEventListener('click', callback)
 els = document.querySelectorAll('p')
 
 // to find the last:
-els.lastChild
+var last_p_on_page = els[els.length-1]
+
+var third_p_el = els[2];
 ```
 
 The syntax is different 😱
@@ -140,6 +142,8 @@ var url = 'https://some.api.com'
 fetch(url)
   .then(
     function(response) {
+
+      if(!response.ok) console.log('something went wrong!', response);
 
       // Examine the text in the response from the API
       response.json().then(function(data) {
