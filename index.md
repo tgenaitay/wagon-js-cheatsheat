@@ -129,7 +129,7 @@ What's AJAX?
 How to do AJAX?
 
 - **$.ajax()** with jQuery
-- **.fetch()** is more modern
+- **fetch()** is more modern
 
 **Example of GET request with fetch():**
 
